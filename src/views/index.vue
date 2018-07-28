@@ -6,19 +6,19 @@
     
     <footer>
       <router-link to="/index" tag="span">
-        <i class="iconfont icon-icon-home"></i>
+        <i class="iconfont icon-home"></i>
          
           首页
       </router-link>
       <router-link to="/index/produce" tag="span">
-       <i class="iconfont icon-chanpin"></i>
+       <i class="iconfont icon-licai"></i>
       产品
       </router-link>
       <router-link to="/index/mine" tag="span">
-       <i class="iconfont icon-qian"></i>
+       <i class="iconfont icon-user"></i>
       我的</router-link>
       <router-link to="/index/much" tag="span">
-      <i class="iconfont icon-gengduo"></i>
+      <i class="iconfont icon-more"></i>
       更多</router-link>
       
 

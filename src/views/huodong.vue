@@ -1,6 +1,6 @@
 <template>
     <div>
-        <v-header @toparent="getdata"></v-header>
+        <v-header :name="tit"></v-header>
         
        <h2>活动</h2>
     </div>
@@ -12,7 +12,7 @@ export default {
     name:"Huodong",
     data(){
         return{
-            tit:'活动指南'
+            tit:'活动中心'
         }
   },
   components:{
@@ -20,9 +20,7 @@ export default {
 
   },
   methods:{
-      getdata(i){
-          this.tit=i;
-      }
+ 
   }
 }
 </script>

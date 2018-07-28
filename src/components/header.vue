@@ -1,19 +1,26 @@
 <template>
     <div>
-        <div class="top">{{tit}}</div>
+        <div class="top">
+        	<span class="jiantou" @click="tap()">&lt;</span>
+            <span>{{name}}</span> 
+        
+        </div>
     </div>
 </template>
 <script>
 export default {
     name:'Header',
+    props:['name'],
      data(){
     return{
-      tit:'hah'
+      tit:'toubu'
     }
   },
-  mounted() {
-     this.$emit('toparent',this.tit)
-  },
+methods:{
+	tap(){
+		this.$router.push("/index")
+	}
+}
 
 }
 </script>
@@ -24,6 +31,13 @@ export default {
   text-align: center;
   font-size: 12px;
   color:#8d9eb3;
+  position: relative;
+}
+.jiantou{
+	font-size: 20px;
+ position: absolute;
+ left: 0;
+	
 }
 .top{
   line-height: 40px;
